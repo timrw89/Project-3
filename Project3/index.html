@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Code Review is a blog for reviewing computer code. This is Tim W's project submission for Project 3."> 
+    <title>The Code Review</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/47405af265.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <div class="container">
+            <span id="logo-text">The Code Review</span>
+            </div>  
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="headline">
+                <h2>Signup for our newsletter</h2>
+                <h3>Get the latest news on how your code is doing right in your inbox</h3>
+            </div>
+            <form>
+                  
+                      
+             <legend>Contact Information</legend>
+             
+                 <div id="contactinfo">  
+                    <div class="lineitem">
+                    <label for="name">Full Name</label>
+                    <input required type="text" id="name" name="user-name" placeholder="Required">
+                    </div>
+                    <div class="lineitem">
+                    <label for="email">Email Address</label>
+                    <input required type="email" id="email" name="user-email" placeholder="Required">
+                    </div>
+                    <div class="lineitem">
+                    <label for="phone">Phone Number</label>
+                    <input type="phone" id="phone" name="user-phone">
+                    </div>
+                    <div class="lineitem">
+                    <label for="address1">Street Address</label>
+                    <input type="text" id="address1" name="user-address1">
+                    </div>
+                    <div class="lineitem">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="user-city">
+                    </div>
+                    <div class="lineitem states">
+                    <label for="state">State</label>
+                    <select id="state"  name="user-state" required>
+                        <option value="" disabled hidden selected>Choose State<i class="fas fa-arrows-alt-v"></i></option>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="DC">District Of Columbia</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                        
+                    </select>
+                    <i class="fas fa-arrows-alt-v"></i>
+                    </div>
+                    <div class="lineitem shortzip">
+                    <label for="zip">Zip Code</label>
+                    <input type="text" id="zip" name="user-zip">
+                    </div>
+                </div>        
+                 
+             
+                <div= id="news">
+                    <fieldset class="newsletter">
+                        
+                        <Legend>Newsletter</Legend>
+                        <p>Select the newsletters you would like to receive</p>
+                        <div class="checks">  
+                            <div class="checkline">
+                            <input type="checkbox" id="htmlnews" checked="checked">
+                            <label for="htmlnews">HTML News</label>
+                            </div>
+                            <br>
+                            <div class="checkline">
+                            <input type="checkbox" id="css" checked="checked">
+                            <label for="css">CSS News</label>
+                            </div>
+                            <br>
+                            <div class="checkline">
+                            <input type="checkbox" id="java" checked="checked">
+                            <label for="java">Javascript News</label>
+                            </div>
+                            <br>
+                         </div>
+                        <p>Newsletter Format</p>
+                         <div class="checkline">
+                        <input type="radio" id="htmlformat" name="user-format" value="htmltext" checked="checked">
+                        <label for="htmlformat">HTML</label>
+                         </div>
+                        
+                        <div class="checkline">
+                        <input type="radio" id="plain" name="user-format" value="plaintext" checked="checked">
+                        <label for="plain">Plain Text</label>
+                        </div>
+                       
+                        <br>
+                        <p for="topics" class="topictitle">Other topics you would like to hear about:</p><br>
+                        <textarea id="topics" name="user-othertopics"></textarea>
+                    </fieldset>
+                </div>
+                <div class="button">
+                <button type="submit">Sign Up</button>
+                </div>
+
+            </form>
+        </div>
+        <div class="copyright">
+            <h3>Copyright The Code Review</h3>
+        </div>
+    </main>
+    
+</body>
+</html>
